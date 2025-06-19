@@ -78,7 +78,7 @@ function App() {
     };
 
     const chatResponse = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4",
       messages: [systemPrompt, contextMessage],
       temperature: 0.2,
     });
