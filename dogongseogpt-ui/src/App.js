@@ -3,8 +3,6 @@ import { createClient } from "@supabase/supabase-js";
 import { OpenAI } from "openai";
 import { Plus, Mic, Waves } from "lucide-react";
 
-console.log("✅ 환경변수 확인:", process.env.REACT_APP_OPENAI_API_KEY);
-
 const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
   process.env.REACT_APP_SUPABASE_KEY
@@ -106,10 +104,10 @@ function App() {
       <header className="text-center my-6">
         <div className="text-sm text-zinc-400">EXS AI 챗봇형 전자매뉴얼</div>
         <div className="text-2xl font-bold mt-2">도공서 지피티</div>
-        <div className="text-sm text-zinc-400 mt-1">작성자: 수도권동부 박수하 ⓡ</div>
+        <div className="text-sm text-zinc-400 mt-1">작성자: 수도권동부 박수하 🚀</div>
         <div className="text-sm text-zinc-400 mt-1">한국도로공사서비스 신입직원들을 위한 영업실무 전자매뉴얼</div>
         <div className="text-sm text-zinc-400 mt-1">Open AI API와 영업실무편람을 기반으로 하고 있습니다.</div>
-        <div className="text-sm text-zinc-400 mt-1">주의사항: 현재 베타 테스트 버전이며 답변에 3~5초 가량 소요될 수 있습니다.</div>
+        <div className="text-sm text-zinc-400 mt-1">✅주의사항: 현재 베타 테스트 버전이며 답변에 💡3~5초 가량💡 소요될 수 있습니다.</div>
       </header>
 
       <div className="flex flex-wrap justify-center gap-3 my-8">
