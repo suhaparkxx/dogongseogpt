@@ -3,7 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import { OpenAI } from "openai";
 import { Plus, Mic, Waves } from "lucide-react";
 
-console.log("✅ 환경변수 확인:", process.env);
+console.log("✅ 환경변수 확인:", process.env.REACT_APP_OPENAI_API_KEY);
 
 const supabase = createClient(
   process.env.REACT_APP_SUPABASE_URL,
