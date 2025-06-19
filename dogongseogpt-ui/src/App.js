@@ -21,7 +21,7 @@ function App() {
   const bottomRef = useRef(null);
 
   const sampleQuestions = [
-    "심야할인 대상 화물차의 차번호 예시는?",
+    "출퇴근 할인 시간과 비율은?",
     "감면단말기로 할인 받으려면?",
     "화물차 심야 할인 시간은?",
   ];
