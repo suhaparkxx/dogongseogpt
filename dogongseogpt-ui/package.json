@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "@supabase/supabase-js": "^2.39.6",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "lucide-react": "^0.292.0",
+    "node-fetch": "^3.3.2",
     "openai": "^4.19.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -12,7 +15,7 @@
     "web-vitals": "^5.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"node server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
   }
 }
